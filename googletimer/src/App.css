@@ -13,18 +13,26 @@
   justify-content: center;
   width: 100%;
   margin-bottom: 100px;
+  
 }
 .name{
   width: 50%;
 }
 .timerstopdiv>div{
   /* margin-left: 100px; */
-  border: 1px solid gray;
+  border: 1px solid rgb(227, 184, 184);
+  border-radius: 6px;
   width: 50%;
   margin-bottom: 20px;
   font-size: 35px;
   font-weight: 600;
   cursor: pointer;
+  background-color: rgb(110, 131, 131);
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.timerstopdiv>div:hover{
+  background-color: rgb(1, 35, 35);
+  color: aliceblue;
 }
 .main{
   height: auto;
@@ -32,8 +40,11 @@
   margin: auto;
   border: 1px solid grey;
   padding: 20px;
-  margin-top: 200px;
+  margin-top: 150px;
+  margin-bottom: 50px;
   border-radius: 6px;
+  background-color: bisque;
+  box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
 }
 
 @media (prefers-reduced-motion: no-preference) {

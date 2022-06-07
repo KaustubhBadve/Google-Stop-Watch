@@ -7,6 +7,10 @@
     cursor: pointer;
     border-radius: 4px;
 }
+.btn>button:hover{
+    background-color: blueviolet;
+    color: aliceblue;
+}
 .timer{
     font-size: 80px;
     font-weight: 600;
@@ -14,8 +18,25 @@
 input{
     width: 250px;
     height: 60px;
-    font-size: 25px;
+    /* font-size: 25px; */
     padding-left: 10px;
     margin-left: -130px;
-    margin-bottom: 30px;
+    /* margin-bottom: 30px; */
+}
+.ip1{
+    width: 150px;
+    margin-left: -10px;
+    margin-bottom: 10px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+.ip2{
+    width: 150px;
+    margin-left: 40px;
+    font-size: 15px;
+    border-radius: 5px;
+}
+body{
+    background-color: rgb(107, 90, 87)
+    ;
 }

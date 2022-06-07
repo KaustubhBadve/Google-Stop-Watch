@@ -22,9 +22,8 @@ import style from './stopwatch.module.css'
 //   );
 // }
 
-const Stopwatch = () => {
-  const [timer, settimer] = useState(0);
-  const timerStop = useRef(null);
+const Stopwatch = ({timer,settimer,timerStopp}) => {
+ 
   const [btnflag, setbtnflag] = useState(false);
 
 //   const [count, setCount] = useState(0);
@@ -33,36 +32,36 @@ const Stopwatch = () => {
 //   const [hr, setHr] = useState(0);
 
 
-  useEffect(() => {
+  // useEffect(() => {
     
     const Start = () => {
-      if (!timerStop.current) {
-        timerStop.current = setInterval(() => {
+      if (!timerStopp.current) {
+        timerStopp.current = setInterval(() => {
           settimer((timer) => timer + 1);
         }, 100);
         setbtnflag(true);
       }
   
       return () => {
-        clearInterval(timerStop.current);
-        timerStop.current = null;
+        clearInterval(timerStopp.current);
+        timerStopp.current = null;
       };
     };
    
-  }, [])
+  // }, [])
   
   
 
   const Pause = () => {
-    clearInterval(timerStop.current);
-    timerStop.current = null;
+    clearInterval(timerStopp.current);
+    timerStopp.current = null;
     setbtnflag(false);
   };
 
   const Reset = () => {
-    clearInterval(timerStop.current);
+    clearInterval(timerStopp.current);
     settimer(0);
-    timerStop.current = null;
+    timerStopp.current = null;
     setbtnflag(false);
   };
 
